@@ -52,34 +52,8 @@ class PagesController < ApplicationController
     @mode_m1 = calculate_mode(@metropolis1)
     @mode_m2 = calculate_mode(@metropolis2)
 
-    #@pdf_builder = pdf_calc(k, left,right, times_calculate)
+    
   end
-  # @neumann = []
-  # current_x = left
-  # step = 0.1
-  # prev_x = -1000
-  # while current_x <= right
-  #   candidates = @neumann_calculations.select { |a| a[0] <= current_x and
-  #                                                   a[0] > prev_x }
-  #   res = candidates.max { |a, b| a[1] > b[1] }
-  #   current_x += step
-  #   next if res == nil
-  #   prev_x = res[0]
-  #   @neumann << res
-  # end
-
-  # current_x = left
-  # step = 0.1
-  # prev_x = -1
-  # while current_x <= right
-  #   candidates = @metropolis_calculations.select { |a| a[0] <= current_x and
-  #                                                   a[0] > prev_x }
-  #   res = candidates.max { |a, b| a[1] <=> b[1] }
-  #   current_x += step
-  #   next if res == nil
-  #   prev_x = res[0]
-  #   @metropolis_graphics << res
-  # end
 
 
   def about
